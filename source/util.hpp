@@ -151,7 +151,7 @@ class file_util{
             //获取文件大小
             size_t fsize = 0;
             ifs.seekg(0,std::ios::end);
-            fsize = ifs.tellg();
+            fsize = ifs.tellg();// 获取偏移量
             ifs.seekg(0,std::ios::beg);
             body.resize(fsize);
             //将文件所有数据读取出来
